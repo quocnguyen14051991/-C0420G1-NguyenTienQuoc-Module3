@@ -21,7 +21,8 @@ foreign key(id_category) references category_book(id_category)
 
 create table address(
 id_address int primary key,
-address varchar(500)
+address1 varchar(500),
+address2 varchar(500)
 );
 
 create table student(
