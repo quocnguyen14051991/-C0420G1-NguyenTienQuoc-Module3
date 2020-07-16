@@ -21,13 +21,13 @@ foreign key(id_category) references category_book(id_category)
 
 create table address(
 id_address int primary key,
-address1 varchar(500),
+address1 varchar(500) not null,
 address2 varchar(500)
 );
 
 create table student(
 student_number int primary key,
-student_name varchar(50) not null unique,
+student_name varchar(50) not null ,
 id_address int,
 foreign key (id_address) references address(id_address),
 email varchar(50) not null ,
@@ -47,6 +47,10 @@ create table detailborroworder(
 id_detailborroworder int primary key,
 id_borrowoder int,
 id_book int,
+limit_borrow_day int default 7, 
+limit_borrow_book int default 10,
 foreign key(id_borrowoder) references borroworder(id_borrowoder),
 foreign key(id_book) references book(id_book)
 );
+
+
