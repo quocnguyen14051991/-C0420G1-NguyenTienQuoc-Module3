@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập tạo layout với html css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font: bold 20px Tahoma;
+        }
+
+        h2 {
+            font: bold 14px Tahoma;
+        }
+
+        header, section, footer, aside, nav, article, hgroup {
+            display: block;
+        }
+
+        body {
+            width: 100%;
+            margin: 20px 0px;
+
+        }
+
+        #container {
+            max-width: 100%;
+            margin: 20px 0px;
+        }
+
+        #top_header {
+            border: 3px solid black;
+            padding: 20px;
+        }
+
+        #logo {
+            width: 165px;
+            margin-right: 20px;
+        }
+
+        #head-link {
+            border: red;
+            background: blue;
+            color: white;
+            height: 50px;
+        }
+
+        #head-link li {
+            display: inline-block;
+            list-style: none;
+            padding: 5px;
+            font: bold 15px Tahoma;
+
+        }
+
+        #side_news {
+            border: 1px solid red;
+            width: 220px;
+            margin: 20px 0px;
+            padding: 30px;
+            background: #66CCCC;
+            float: left;
+            width: 23%;
+        }
+        #main-section{
+            float: left;
+            width: 75%;
+        }
+
+        #the-footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid green;
+            clear: both;
+        }
+
+        article {
+            background: #FFFBCC;
+            border: 1px solid red;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        article footer {
+            text-align: right;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<!--div container chứa toàn bộ nội dung của trang web-->
+<div id="container">
+    <!--div head trên cùng của trang chứa logo và lời giới thiệu-->
+    <header id="top_header">
+
+        <img src="tintuc.png" id="logo"/>
+    </header>
+    <!--    kết thúc div header-->
+    <!--    thẻ div menu-->
+    <nav id="head-link">
+        <ul>
+            <li>Trang Chủ</li>
+            <li>Tin Tức</li>
+            <li>Thông Báo</li>
+            <li>Liên Hệ</li>
+            <li>Diển Đàn</li>
+        </ul>
+    </nav>
+    <!--    kết thúc thẻ div menu-->
+    <!--main chứa nội dung của website-->
+    <div class="main">
+        <section id="main-section">
+            <article>
+                <header>
+                    <hgroup>
+                        <h1>Nhiều nước sốc khi doanh nghiệp Nhật chọn sang Việt Nam đầu tư </h1>
+                        <h2>'Nhiều nước sốc khi doanh nghiệp Nhật chọn sang Việt Nam đầu tư'
+                            Đại diện Jetro cho rằng, việc một nửa doanh nghiệp Nhật được hỗ trợ chi phí chọn sang Việt
+                            Nam
+                            gây bất ngờ cho các nước trong khu vực.</h2>
+                    </hgroup>
+                </header>
+                <p>
+                    Tại cuộc họp báo ngày 23/7, ông Takeo Nakajima, Trưởng đại diện Tổ chức xúc tiến mậu dịch Nhật
+                    Bản (Jetro) Hà Nội xác nhận, 15 trên 30 doanh nghiệp được hỗ trợ kinh phí trong dự án đa dạng
+                    chuỗi cung ứng sang ASEAN, chọn Việt Nam là điểm đến.
+
+                    "Việt Nam đang rất được quan tâm. Khi con số này được công bố, nó chắc chắn gây sốc cho các quốc
+                    gia lân cận", ông nói.
+
+                    Đại diện của Jetro cho biết, doanh nghiệp Nhật Bản sẽ đa dạng hóa chuỗi cung ứng nhưng không có
+                    nghĩa là dịch chuyển hoàn toàn nhà máy từ nước này sang nước khác.
+
+                    Ông Takeo Nakajima nói, một số công ty sản xuất khẩu trang, thiết bị y tế, quần áo bảo hộ chọn
+                    Việt Nam là điểm đến nhờ Việt Nam có nhiều doanh nghiệp có năng lực và uy tín trong lĩnh vực dệt
+                    may. Tuy nhiên, đây mới chỉ là một phần của làn sóng, ông đánh giá.
+
+                    Một lợi thế khác biệt mà không quốc gia nào trong khu vực so sánh được, theo đại diện Jetro Hà
+                    Nội, là Việt Nam có đội ngũ đông đảo người lao động biết tiếng Nhật. Đó là một phần lý do khiến
+                    doanh nghiệp Nhật Bản sẵn sàng vào Việt Nam, ông nói.
+
+                    Ông cũng đánh giá, sự tâm huyết của Chính phủ Việt Nam trong thu hút đầu tư từ Nhật Bản là điểm
+                    mấu chốt khiến những tồn tại như sự thiếu nhất quán, không minh bạch, tham nhũng (có thể xảy ra
+                    ở bất cứ quốc gia khác) trở nên không còn quá đáng ngại.
+
+                    So với các nước trong khu vực ASEAN như Malaysia, Singapore, Thái Lan, Việt Nam có lợi thế về
+                    chi phí thấp. Tuy nhiên, tiền nhân công, thuê mặt bằng đang tăng lên từng năm khiến Việt Nam sẽ
+                    sớm mất lợi thế giá rẻ nên cần tạo cho mình những lợi thế khác, ông Takeo Nakajima nhận định.
+
+                    Bên cạnh những điểm hấp dẫn, ông đánh giá Việt Nam cần sớm nâng cao tỷ lệ nội địa hóa và ngành
+                    công nghiệp phụ trợ trong bối cảnh cuộc đua FDI ở Đông Nam Á đang rất sôi nổi. Dân số Việt Nam
+                    100 triệu dân nhưng Nhật Bản cũng lo ngại về tình trạng thiếu nguồn nhân lực.
+
+                    Ngoài ra, việc đi lại hạn chế giữa hai nước cũng được coi là rào cản. Các chuyến bay thương mại
+                    vì Covid-19 chưa được nối lại sẽ gây ảnh hướng tới tiến trình đầu tư, nhất là khi nhiều trong số
+                    15 doanh nghiệp chọn Việt Nam làm điểm đã bắt tay vào kế hoạch đa dạng hóa chuỗi cung ứng, ông
+                    nhận định.
+
+                    Tại Đông Nam Á, cuộc cạnh tranh thu hút FDI đang rất gay cấn. "Đó cũng là thách thức bởi các
+                    nước khác sẽ không ngừng nỗ lực để cải thiện môi trường kinh doanh, không để thua Việt Nam", ông
+                    chia sẻ.
+
+                    Khi Trung Quốc – công xưởng của thế giới đóng cửa vì đại dịch Covid-19, Nhật Bản cũng như nhiều
+                    nước khác nhận thức được điểm yếu khi chuỗi cung ứng phụ thuộc vào một quốc gia. Vì thế, ông
+                    Takeo Nakajima cho hay, sau cuộc khủng hoảng khẩu trang, nước rửa tay và các trang thiết bị bảo
+                    hộ, Chính phủ Nhật Bản lần đầu tiên có chương trình khuyến khích doanh nghiệp đa dạng hóa chuỗi
+                    cung ứng nhằm giảm lệ thuộc kinh tế vào một quốc gia.
+
+                    30 doanh nghiệp được công bố mới đây nằm trong chương trình hỗ trợ dịch chuyển hoạt động sản
+                    xuất sang các nước ASEAN, do Bộ Kinh tế, Thương mại và Công nghiệp Nhật Bản (METI) phát động.
+                    Mức tối đa các doanh nghiệp này có thể được hỗ trợ là 5 tỷ yen (hơn 1.000 tỷ đồng). Các doanh
+                    nghiệp trong lĩnh vực y tế thuộc nhóm ưu tiên của METI.
+
+                    Theo đó, doanh nghiệp phải hoàn thành việc xây dựng nhà máy và được kiểm duyệt trước tháng
+                    3/2025, với lĩnh vực sản xuất trang thiết bị y tế hạn chót là tháng 3/2023.</p>
+                <footer>
+                    <p>Quỳnh Trang</p>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <hgroup>
+                        <h1>Đề xuất chuyển vùng xây điện hạt nhân sang làm điện khí ở Cà Ná</h1>
+                        <h2>Tỉnh Ninh Thuận muốn Chính phủ cho phép chuyển quy hoạch điện hạt nhân 4.600 MW sang làm tổ
+                            hợp điện khí LNG Cà Ná.</h2>
+                    </hgroup>
+                </header>
+                <p>Tại Diễn đàn cấp cao năng lượng Việt Nam năm 2020, ngày 22/7, ông Phạm Văn Hậu - Phó chủ tịch UBND
+                    tỉnh Ninh Thuận kiến nghị loạt chính sách đưa tỉnh này thành trung tâm phát triển năng lượng tái tạo
+                    quốc gia.
+
+                    Theo ông Hậu, sau khi chủ trương dự án điện hạt nhân tại Ninh Thuận được Quốc hội quyết định dừng
+                    vào tháng 11/2016, cấp thẩm quyền định hướng xây dựng tỉnh này thành trung tâm năng lượng tái tạo
+                    của cả nước. Thực tế, hai năm vừa qua Ninh Thuận đã thu hút mạnh mẽ làn sóng đầu tư vào lĩnh vực
+                    năng lượng tái tạo (điện gió, điện mặt trời...).
+
+                    Ngoài ra, theo Nghị quyết 55 về phát triển năng lượng tái tạo tới 2030, tầm nhìn 2045 của Bộ Chính
+                    trị, Ninh Thuận sẽ phát triển thêm năng lượng khí LNG và hạ tầng nhập khẩu khí LNG. Khu vực cảng Cà
+                    Ná với lợi thế về cảng nước sâu có thể tiếp nhận tàu 250.000 tấn. Đây cũng là cảng gần với tổ hợp
+                    khí 6.000 MW mà Thủ tướng đã đồng ý bổ sung vào quy hoạch giai đoạn 1 là 1.500 MW.
+
+                    Do đó, Phó chủ tịch tỉnh Ninh Thuận kiến nghị Chính phủ cho phép chuyển quy hoạch 4.600 MW đã có
+                    trong sơ đồ VII về điện hạt nhân sang đầu tư tổ hợp điện khí LNG Cà Ná.
+
+                    "Với quy mô này sẽ giúp tỉnh thu hút đầu tư của các thành phần kinh tế hiệu quả hơn, triển khai xây
+                    dựng đồng bộ cảng nước sâu LNG Cà Ná, khu công nghiệp Cà Ná", ông Hậu nói.</p>
+                <footer>
+                    <p>- Kỳ Duyên</p>
+                </footer>
+            </article>
+        </section>
+        <aside id="side_news">
+            <h4>Tin tức</h4>
+            Tin hot trong ngày!
+            <h4>Dự Báo Thời Tiết</h4>
+        </aside>
+    </div>
+    <!--    // kết thúc thẻ div main-->
+    <footer id="the-footer">
+        Copyright-Nguyễn Tiến Quôc C04-20G1
+    </footer>
+</div>
+<!--kết thúc thẻ div container-->
+</body>
+</html>
